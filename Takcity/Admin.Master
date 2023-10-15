@@ -1,0 +1,97 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Admin.master.vb" Inherits="Takcity.Admin" %>
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="StyleSheet4.css" />
+<link rel="stylesheet" href="main.css" />
+<link rel="stylesheet" href="paper.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            left: 20px;
+            bottom: 15px;
+        }
+    </style>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+     <header = style="background-color: #491d1d">
+        <a href="AdminHome.aspx" class="logo"><i class="ri-home-6-line"></i><span>Tak Travel </span>
+        </a>
+
+
+        <ul class="navbar">
+            <li><a href="Adminhistory.aspx" class="active">History</a></li>
+            <li><a href="Adminplace.aspx">Places</a></li>
+            <li><a href="Adminfood.aspx">restaurant</a></li>
+            <li><a href="Adminhotel.aspx">Hotel</a></li>
+            <li><a href="AdminContact.aspx">Contact</a></li>
+        </ul>
+        
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-fill">Welcome Admin</i></a>
+            <a href="AdminWelcome.aspx">Logout</a>
+            <div><i class="ri-menu-line" id="menu-icon"></i></div>
+          
+        </div>
+    </header>
+    <!--js link--->
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <form id="form1" runat="server">
+        <div>
+            <br /><br /><br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Detail Contact</h4>
+                    <p>Address: จังหวัด ตาก อำเภอ แม่สอด บ้านเลขที่ 455/2 63110   <br />
+                    Tel: (+66)097-9580256<br />
+                    Email: baramee1707@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu Website</h4>
+                    <ul>
+                        <li><a href="Adminhistory.aspx">History</a></li>
+                        <li><a href="Adminplace.aspx">Place</a></li>
+                        <li><a href="Adminfood.aspx">Restaurant</a></li>
+                        <li><a href="Adminhotel.aspx">Hotel</a></li>
+                        <li><a href="AdminContact.aspx">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Admin</h4>
+                    <ul>
+                        <li><a href="loginadmin.aspx">Logout admin</a></li>
+                        <li><a href="login.aspx">Login User</a></li>
+                        <li><a href="Adminediter.aspx">Setting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Media</h4>
+                    <div class="social-link">
+                       <a href="https://www.facebook.com/profile.php?id=100095615762578"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#twit"><i class="fab fa-twitter"></i></a>
+                        <a href="#ig"><i class="fab fa-instagram"></i></a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

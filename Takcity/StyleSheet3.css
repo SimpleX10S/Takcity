@@ -1,0 +1,82 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+    * a {
+        text-decoration: none;
+    }
+
+    * li {
+        list-style: none;
+    }
+
+.container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    .bg::after {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        filter: brightness(45%);
+        background-image: url("https://scontent.fphs2-1.fna.fbcdn.net/v/t39.30808-6/279353191_350801733695107_7976058483917728320_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeGRADRyBVNVMPexkC3ypzyOc8ubPQ2Dwvlzy5s9DYPC-SY6TepIsEo7fP7NrfXSNZBqcOMAlgrd9y7hU8mpOWg3&_nc_ohc=GT-2Z16YBG8AX848AWo&_nc_ht=scontent.fphs2-1.fna&_nc_e2o=s&oh=00_AfATIB6clioUh5-vncUD4ubezX64NNf9w6ZMbxld_kSzOQ&oe=65272620");
+        background-size: cover;
+        background-position: center;
+    }
+
+.navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+}
+
+    .navBar ul {
+        display: flex;
+        align-items: center;
+    }
+
+        .navBar ul li {
+            padding: 0 25px;
+        }
+
+            .navBar ul li a {
+                font-size: 1rem;
+                color: #fff;
+                font-weight: 400;
+                letter-spacing: 1.5px;
+            }
+
+    .navBar .logo a {
+        font-size: 2.3rem;
+        color: #fff;
+    }
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;

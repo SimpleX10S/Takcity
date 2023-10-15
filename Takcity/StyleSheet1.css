@@ -1,0 +1,165 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+    * a {
+        text-decoration: none;
+    }
+
+    * li {
+        list-style: none;
+    }
+
+.container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    .bg::after {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        filter: brightness(45%);
+        background-image: url("https://scontent.fphs2-1.fna.fbcdn.net/v/t39.30808-6/279353191_350801733695107_7976058483917728320_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeGRADRyBVNVMPexkC3ypzyOc8ubPQ2Dwvlzy5s9DYPC-SY6TepIsEo7fP7NrfXSNZBqcOMAlgrd9y7hU8mpOWg3&_nc_ohc=GT-2Z16YBG8AX848AWo&_nc_ht=scontent.fphs2-1.fna&_nc_e2o=s&oh=00_AfATIB6clioUh5-vncUD4ubezX64NNf9w6ZMbxld_kSzOQ&oe=65272620");
+        background-size: cover;
+        background-position: center;
+    }
+
+.navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+}
+
+    .navBar ul {
+        display: flex;
+        align-items: center;
+    }
+
+        .navBar ul li {
+            padding: 0 25px;
+        }
+
+            .navBar ul li a {
+                font-size: 1rem;
+                color: #fff;
+                font-weight: 400;
+                letter-spacing: 1.5px;
+            }
+
+    .navBar .logo a {
+        font-size: 2.3rem;
+        color: #fff;
+    }
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.phuket {
+    color: #fff;
+    padding: 25px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+    .card h2 {
+        color: #fff;
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    .card .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 90%;
+        height: 220px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+.box1 {
+    background-image: url("https://cms.dmpcdn.com/travel/2021/04/16/0e1f1bf0-9eae-11eb-8caf-b5698e1a23ec_original.jpg");
+}
+
+.box2 {
+    background-image: url("https://promotions.co.th/wp-content/uploads/2022/11/tourist-attraction-tak-province-2-days-1-night-in-winter.jpg");
+}
+
+.box3 {
+    background-image: url("https://s359.kapook.com/entry/12c7abe7-c6ca-4c5a-8791-8c517b20b8b1.jpg");
+}
+
+.box4 {
+    background-image: url("https://www.trekkingthai.com/wp-content/uploads/2018/08/20257957_1427396454013919_6006499667222059130_n.jpg");
+}
+
+.phuket h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.txt h1 {
+    font-size: 7rem;
+}
+
+.phuket p {
+    opacity: 0.4;
+}
+
+.tnx h2 i {
+    color: #fd7e13;
+}
+
+.card div {
+    transition: 0.5s;
+}
+
+    .card div:hover {
+        transition: 0.3s;
+        transform: translateY(-10px);
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }

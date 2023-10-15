@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="roomlist" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\roomlist.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="roomlistConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Roomlists" Member="Roomlists">
+    <Type Name="Roomlist">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="NChar(300)" CanBeNull="true" />
+      <Column Name="detail" Type="System.String" DbType="NChar(500)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NChar(500)" CanBeNull="true" />
+      <Column Name="price" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
